@@ -7,64 +7,73 @@
     <title>evaluacion</title>
     <style>
         .tarjeta {
+            position: relative;
             padding: 25px;
             background-color: white;
             border: 2px solid gray;
             border-radius: 15px;
             width: 250px;
-            
-           
+
+
 
 
         }
 
-        .tarjeta-2 {
-            padding: 25px;
-            background-color: white;
-            border: 2px solid gray;
-            border-radius: 15px;
-            width: 250px;
-        
-
+        main {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
         }
 
+    
         .online {
             position: absolute;
             background-color: green;
             border-radius: 5px;
-            padding-right: 3px;
+            top: 20px;
+            right: 10px;
+            padding: 8px;
+
 
         }
 
         .offine {
             background-color: red;
             border-radius: 7px;
-            padding-right: 3px;
             position: absolute;
-        
+            top: 20px;
+            right: 10px;
+            padding: 8px;
+            
+
+
 
 
         }
 
         .offi {
+
             font-weight: bolder;
             color: white;
+            top: 20px;
+            right: 10px;
         }
 
-        .onli{
+        .onli {
             font-weight: bolder;
             color: white;
+            top: 20px;
+            right: 0;
         }
 
         .nombre {
-            justify-content: space-between;
+            display: flex;
+            justify-content: center;
             color: black;
+
         }
 
-        .nombre-2 {
-            color: black;
-        }
-
+        
         .imagen {
             display: flex;
             border: 3px solid rgb(4, 101, 248);
@@ -73,11 +82,21 @@
 
         }
 
-        .imagen-2 {
+        .img-tarjeta {
             display: flex;
-            border: 3px solid rgb(4, 101, 248);
+
             border-radius: 20px;
             justify-content: center;
+
+
+        }
+
+        .img-tarjeta {
+            display: flex;
+
+            border-radius: 20px;
+            justify-content: center;
+
 
         }
 
@@ -85,21 +104,35 @@
             color: gray;
         }
 
-        .trabajo-2 {
-            color: gray;
-        }
+       
 
-        .logos {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
+        
 
         .redes {
             display: flex;
             justify-content: center;
             gap: 10px;
-        
+            align-items: center;
+
+        }
+
+        .tarjetas {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        .boton {
+            background-color: deepskyblue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+            border-radius: 40px;
+            border: 2px solid deepskyblue;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
         }
     </style>
 
@@ -108,94 +141,130 @@
 
 
 <body>
+    <main>
+        <div class="tarjetas">
 
-    <div class="tarjeta">
-        <div class="online">
-            <span class="onli">
-                Online
-            </span>
-        </div>
+            <div class="tarjeta">
+                <div class="online">
+                    <span class="onli">
+                        <b>Online</b>
+                    </span>
+                </div>
 
-        <div class="imagen">
-            <img src="150.png" width="150px" alt="">
-        </div>
+                <div class="img-tarjeta">
+                    <img class="imagen" src="150.png" width="150px" alt="">
+                </div>
 
-        <div class="nombre">
-            <p><b>Ana Garcia</b></p>
-        </div>
+                <div class="nombre">
+                    <p><b>Ana Garcia</b></p>
+                </div>
 
-        <div class="trabajo">
-            <div>
-                <p>Desarrolladora web frontend</p>
+                <div class="trabajo">
+                    <div>
+                        <p>Desarrolladora web frontend</p>
+                    </div>
+
+                    <div>
+                        <p>Apasionada por crear experiencias web increibles para toda la comunidad de rio negro </p>
+                    </div>
+                </div>
+
+                <div class="redes">
+                    <div>
+                        <img src="twitter-logo-twitter-icon-transparent-free-free-png.webp" width="30px" alt="">
+                    </div>
+
+                    <div>
+                        <img src="aawsmvkao.webp" width="30px" alt="">
+                    </div>
+
+                    <div>
+                        <img src="github.png" width="30px" alt="">
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
             </div>
 
-            <div>
-                <p>Apasionada por crear experiencias web increibles para toda la comunidad de rio negro </p>
+
+            <div class="tarjeta">
+
+                <div class="offine">
+                    <span class="offi">
+                        
+                        <b>Offline</b>
+                    </span>
+
+                </div>
+
+
+                <div class="img-tarjeta">
+                    <img class="imagen" src="150.png" width="150px" alt="">
+                </div>
+
+                <div class="nombre">
+                    <p><b>Mina Murray</b></p>
+                </div>
+
+                <div class="trabajo">
+                    <div>
+                        <p>Backend Developer</p>
+                    </div>
+
+                    <div>
+                        <p>Experiencia desarrollando micro- <br>servidores y servicios REST. <br> Experiencia en AWS</p>
+                    </div>
+                </div>
+
+                <div class="redes">
+
+                    <div>
+                        <img src="twitter-logo-twitter-icon-transparent-free-free-png.webp" width="30px" alt="">
+                    </div>
+
+                    <div>
+                        <img src="aawsmvkao.webp" width="30px" alt="">
+                    </div>
+
+                    <div>
+                        <img src="github.png" width="30px" alt="">
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
-        <div class="logos">
-            <div>
-                <img src="twitter-logo-twitter-icon-transparent-free-free-png.webp" width="30px" alt="">
-            </div>
-
-            <div>
-                <img src="aawsmvkao.webp" width="30px" alt="">
-            </div>
-
-            <div>
-                <img src="github.png" width="30px" alt="">
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="tarjeta-2">
-
-        <div class="offine">
-            <span class="offi">
-                offine
-            </span>
-
-        </div>
 
 
-        <div class="imagen-2">
-            <img src="150.png" width="150px" alt="">
-        </div>
+        <button class="boton">
+            <img src="mail.png" width="30px" alt="">
+            <p class="contactar-color">
+                contactar
 
-        <div class="nombre-2">
-            <p>Mina Murray</p>
-        </div>
+            </p>
 
-        <div class="trabajo-2">
-            <div>
-                <p>Backend Developer</p>
-            </div>
+        </button>
 
-            <div>
-                <p>Experiencia desarrollando micro- <br>servidores y servicios REST. <br> Experiencia en AWS</p>
-            </div>
-        </div>
 
-        <div class="redes">
 
-            <div>
-                <img src="twitter-logo-twitter-icon-transparent-free-free-png.webp" width="30px" alt="">
-            </div>
 
-            <div>
-                <img src="aawsmvkao.webp" width="30px" alt="">
-            </div>
 
-            <div>
-                <img src="github.png" width="30px" alt="">
-            </div>
 
-        </div>
 
-    </div>
+
+
+
+    </main>
+
+
+
 
 </body>
 
